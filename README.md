@@ -6,11 +6,11 @@ Créer une API permettant de :
 
 A. Lister les images d'une page web à partir d'une URL donnée.
 
-| Verbe  | Path   | Paramètres                                         |
-|--------|--------|------------------------------------------------------|
-| GET    | /scan/images | ?url=xxx                                      |
+| Verbe  | Chemin | Paramètres                                         |
+|--------|--------|----------------------------------------------------|
+| GET    | /scan/images | ?url=xxx                                     |
 
-Pour chaque image trouvée, l'API devra fournir les informations suivantes:
+- Pour chaque image trouvée, l'API devra fournir les informations suivantes:
 
 | Noms   | Types  | Descriptions                                         |
 |--------|--------|------------------------------------------------------|
@@ -24,16 +24,16 @@ B. Récupérer toutes les meta-données de la page :
 
 - La liste des metas : https://gist.github.com/kevinSuttle/1997924
 
-| Verbe  | Path   | Paramètres                                         |
-|--------|--------|------------------------------------------------------|
+| Verbe  | Chemin | Paramètres                                         |
+|--------|--------|----------------------------------------------------|
 | GET    | /scan/metas | ?url=xxx                                      |
 
 Pour chaque meta trouvé, l'API devra fournir les informations suivantes:
 
 | Noms   | Types  | Descriptions                                         |
 |--------|--------|------------------------------------------------------|
-| name   | String | nom du meta                                          |
-| value  | String | Données du meta                              |
+| name   | String | Nom du meta                                          |
+| value  | String | Données du meta                                      |
 
 ## Contraintes
 - Les retours de l'API devront être au format `JSON`.
